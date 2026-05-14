@@ -1,5 +1,6 @@
+/*I like how it looks on my phone, but I'm not convinced by the desktop version*/
+
 :root {
-  /* colors */
   --bg: #0d0f14;
   --surface: #151820;
   --card: #1e2230;
@@ -12,12 +13,12 @@
   --text: #e8eaf2;
   --muted: #7a82a0;
 
-  /* completed courses */
+  
   --done-bg: #112a1c;
   --done-border: rgba(74, 222, 128, 0.3);
   --done: #4ade80;
 
-  /* fonts */
+ 
   --heading-font: 'Syne', sans-serif;
   --body-font: 'DM Sans', sans-serif;
 
