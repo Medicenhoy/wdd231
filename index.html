@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD231 Course Home Page – Eloy Martinez Cabello, BYU-Idaho Software Development" />
+  <title>WDD231 | Eloy Martinez Cabello</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark" >E</span>
+        <div class="logo-text">
+          <strong>Eloy Martinez Cabello</strong>
+          <span>WDD 231 &ndash; Web Frontend Development I</span>
+        </div>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="chamber/index.html">Chamber</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-content">
+        <p class="eyebrow">BYU&ndash;Idaho &middot; Software Development</p>
+        <h1>Building for the Web.<br /><em>One week at a time.</em></h1>
+        <p class="hero-sub">My learning portfolio for WDD 231 &mdash; tracking weekly progress, coursework, and the Chamber of Commerce project.</p>
+        <a href="chamber/index.html" class="btn-primary">View Chamber Project &rarr;</a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="about-inner">
+
+        <div class="about-left">
+          <p class="eyebrow">About Me</p>
+          <h2 id="about-heading">Eloy Martinez Cabello</h2>
+          <p class="about-tagline">Passionate about good ideas &mdash; simplifying processes and turning concepts into reality.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://www.instagram.com/medicenhoy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/eloymarca/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Medicenhoy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <ul class="about-facts">
+            <li>
+              <span class="fact-icon" >🌍</span>
+              <div>
+                <strong>From Venezuela</strong>
+                <span>Lived in Argentina and Brazil &mdash; three countries, one journey.</span>
+              </div>
+            </li>
+            <li>
+              <span class="fact-icon" >🗣️</span>
+              <div>
+                <strong>4 Languages</strong>
+                <span>Spanish, English, Portuguese, and French.</span>
+              </div>
+            </li>
+            <li>
+              <span class="fact-icon">💡</span>
+              <div>
+                <strong>Ideas &amp; Simplicity</strong>
+                <span>I love breaking down complex problems into clean, actionable solutions.</span>
+              </div>
+            </li>
+            <li>
+              <span class="fact-icon">🍳</span>
+              <div>
+                <strong>Off the Clock</strong>
+                <span>Cooking and watching movies with my wife.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="courses" class="courses-section" aria-labelledby="courses-heading">
+      <h2 id="courses-heading">My Courses</h2>
+      <p class="section-sub">Filter by certificate program. Completed courses are marked in green.</p>
+
+      <div class="filter-bar" role="group" aria-label="Filter courses by certificate">
+        <button class="filter-btn active" data-filter="all"     aria-pressed="true" >All</button>
+        <button class="filter-btn"        data-filter="webcs"   aria-pressed="false">Web &amp; CS</button>
+        <button class="filter-btn"        data-filter="webdev"  aria-pressed="false">Web Dev</button>
+        <button class="filter-btn"        data-filter="softdev" aria-pressed="false">Software Dev</button>
+      </div>
+
+      <div id="course-list" class="course-grid" aria-live="polite" aria-label="Course list"></div>
+
+      <div class="credits-bar" aria-live="polite">
+        <span>Total Credits Shown:</span>
+        <strong id="total-credits">0</strong>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>Eloy Martinez Cabello</strong>
+        <span>WDD231 Class Project &middot; BYU-Idaho</span>
+      </div>
+      <div class="footer-right">
+        <p>&copy; <span id="copyright-year"></span> Eloy Martinez Cabello</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
