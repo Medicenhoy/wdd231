@@ -1,29 +1,29 @@
 /*I like how it looks on my phone, but I'm not convinced by the desktop version*/
 
 :root {
-  --bg: #0d0f14;
-  --surface: #151820;
-  --card: #1e2230;
-  --border: #2a2f42;
+  
+  --clr-bg: #0d0f14;
+  --clr-surface: #151820;
+  --clr-surface-2: #1e2230;
+  --clr-border: #2a2f42;
 
-  --primary: #4f8ef7;
-  --primary-dark: #3a7aee;
-  --gold: #f7c94f;
+  --clr-accent: #4f8ef7;
+  --clr-accent-hover: #3a7aee;
+  --clr-gold: #f7c94f;
 
-  --text: #e8eaf2;
-  --muted: #7a82a0;
+  --clr-text: #e8eaf2;
+  --clr-muted: #7a82a0;
 
   
-  --done-bg: #112a1c;
-  --done-border: rgba(74, 222, 128, 0.3);
-  --done: #4ade80;
+  --clr-done-bg: #112a1c;
+  --clr-done-border: rgba(74, 222, 128, 0.3);
+  --clr-done-text: #4ade80;
 
- 
-  --heading-font: 'Syne', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
+  --ff-head: 'Syne', sans-serif;
+  --ff-body: 'DM Sans', sans-serif;
 
   --radius: 12px;
-  --header-height: 64px;
+  --header-h: 64px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
