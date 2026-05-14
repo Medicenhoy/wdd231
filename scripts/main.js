@@ -1,3 +1,5 @@
+// still working on this js I know I can do better, but I'm really sleepy... 
+
 const courses = [
 
   { number: "CSE 110", name: "Introduction to Programming",   credits: 2, certificate: "webcs",   completed: true  },
