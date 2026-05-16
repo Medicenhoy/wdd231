@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Mercer Tavern",
+    "address": "10332 112 St NW, Edmonton, AB T5K 1M4",
+    "phone": "(780) 483-4440",
+    "url": "https://www.mercertavern.ca",
+    "image": "mercer-tavern.webp",
+    "membershipLevel": 3,
+    "category": "Hospitality"
+  },
+  {
+    "name": "Transcend Coffee",
+    "address": "10349 Jasper Ave NW, Edmonton, AB T5J 1Y7",
+    "phone": "(780) 757-5730",
+    "url": "https://transcendcoffee.ca/",
+    "image": "transcendcoffee.webp",
+    "membershipLevel": 2,
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Homestead Coworking",
+    "address": "Alberta Block Building en Jasper Ave",
+    "phone": "(780) 244-1757",
+    "url": "https://homesteadcowork.ca/",
+    "image": "abblock-63.webp",
+    "membershipLevel": 3,
+    "category": "Coworking & Tech"
+  },
+  {
+    "name": "ATB Financial",
+    "address": "2100 10020 100 St NW, Edmonton, AB T5J 0N3",
+    "phone": "(780) 408-7000",
+    "url": "https://www.atb.com",
+    "image": "ATBFinancial.webp",
+    "membershipLevel": 3,
+    "category": "Financial Services"
+  },
+  {
+    "name": "Yellowhead Brewery",
+    "address": "10229 105 St NW, Edmonton, AB T5J 1E2",
+    "phone": "(780) 732-2739",
+    "url": "https://www.yellowheadbrewery.com",
+    "image": "yellowheadbrewery.webp",
+    "membershipLevel": 2,
+    "category": "Brewery"
+  },
+  {
+    "name": "Grant MacEwan University",
+    "address": "10700 104 Ave NW, Edmonton, AB T5J 4S2",
+    "phone": "(780) 497-5040",
+    "url": "https://www.macewan.ca",
+    "image": "macewanuniversity.webp",
+    "membershipLevel": 1,
+    "category": "Education"
+  },
+  {
+    "name": "River Valley Adventure Co.",
+    "address": "9004 Rowland Rd NW, Edmonton, AB T6A 3Z4",
+    "phone": "(780) 439-0531",
+    "url": "https://www.rivervalleyadventure.com",
+    "image": "rivervalleyadventureco..webp",
+    "membershipLevel": 1,
+    "category": "Recreation & Tourism"
+  }
+]
