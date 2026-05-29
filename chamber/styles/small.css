@@ -180,6 +180,7 @@ header {
 
 
 .directory-hero {
+  background-color: var(--river);
   background: linear-gradient(135deg, var(--river) 0%, var(--sky) 100%);
   color: #fff;
   padding: 2.5rem var(--gap) 2rem;
