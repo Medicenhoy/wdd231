@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
 
 :root {
   --river:      #1b3a5c;
@@ -173,11 +173,11 @@ header {
 
 #main-nav a.active {
   background-color: var(--gold);
-  color: #fff;
+  color: var(--ink); 
   font-weight: 600;
 }
 
-/* hero */
+
 
 .directory-hero {
   background: linear-gradient(135deg, var(--river) 0%, var(--sky) 100%);
@@ -192,13 +192,14 @@ header {
   margin-bottom: .4rem;
 }
 
+
 .directory-hero p {
   font-size: 1rem;
   color: var(--sky-light);
   margin: 0;
 }
 
-/* controls */
+
 
 .directory-controls {
   padding: 1rem var(--gap);
@@ -241,7 +242,7 @@ header {
   color: #fff;
 }
 
-/* grid view */
+
 
 .members-grid {
   display: grid;
@@ -353,7 +354,7 @@ header {
   flex-shrink: 0;
 }
 
-/* badges */
+
 
 .membership-badge {
   display: inline-block;
@@ -377,7 +378,7 @@ header {
   font-size: .95rem;
 }
 
-/* footer */
+
 
 footer {
   background-color: var(--river);
