@@ -485,7 +485,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(27, 58, 92, 0.9); /* var(--river) con opacidad */
+  background: rgba(27, 58, 92, 0.9); 
   color: #fff;
   padding: 1.5rem;
   text-align: center;
@@ -496,10 +496,11 @@ footer {
 }
 .hero-cta-box h1 { color: var(--gold-light); font-size: 1.8rem; }
 .hero-cta-box p { font-size: 0.95rem; margin-bottom: 1.2rem; color: var(--sky-light); }
+
 .btn-cta {
   display: inline-block;
   background: var(--gold);
-  color: var(--river); 
+  color: var(--ink); 
   padding: 0.6rem 1.2rem;
   border-radius: var(--radius);
   font-family: var(--font-heading);
