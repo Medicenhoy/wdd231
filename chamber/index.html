@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Member Directory | Edmonton Chamber of Commerce</title>
-  <meta name="description" content="Browse the member directory of the Edmonton Chamber of Commerce. Discover local businesses, services, and organizations that power Edmonton's economy." >
-  <meta name="author" content="Eloy Martinez Cabello" >
+  <title>Chamber of Commerce & Member Directory</title>
+  <meta name="description" content="Welcome to the Edmonton Chamber of Commerce and our official Member Directory." />
+  <meta name="author" content="Eloy Martinez Cabello" />
 
-  <meta property="og:title" content="Member Directory | Edmonton Chamber of Commerce" >
-  <meta property="og:description" content="Browse the member directory of the Edmonton Chamber of Commerce. Discover local businesses, services, and organizations that power Edmonton's economy." >
-  <meta property="og:image" content="https://medicenhoy.github.io/wdd231/chamber/images/og-directory.jpg" >
-  <meta property="og:url" content="https://medicenhoy.github.io/wdd231/chamber/directory.html" >
-  <meta property="og:type" content="website" >
-
-  <link rel="icon" href="images/favicon.png" type="image/png" >
-
-  <link rel="stylesheet" href="styles/normalize.css" >
-  <link rel="stylesheet" href="styles/small.css" >
-  <link rel="stylesheet" href="styles/larger.css" >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  
   <script src="scripts/directory.js" defer></script>
+  <script src="scripts/home.js" defer></script>
 </head>
 <body>
 
   <header>
     <div class="header-inner">
       <div class="logo-area">
-        <img src="images/chamber-logo.jpg" alt="Edmonton Chamber of Commerce logo" width="60" height="60" >
+        <img src="images/chamber-logo.jpg" alt="Edmonton Chamber of Commerce logo" width="60" height="60" />
         <div class="logo-text">
           <span class="logo-title">Edmonton</span>
           <span class="logo-sub">Chamber of Commerce</span>
@@ -44,8 +39,8 @@
 
       <nav id="main-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+          <li><a href="../index.html">Course Home</a></li>
+          <li><a href="index.html" class="active" aria-current="page">Chamber & Directory</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="join.html">Join</a></li>
         </ul>
@@ -53,16 +48,63 @@
     </div>
   </header>
 
-  <main>
-    <section class="directory-hero">
-      <h1>Member Directory</h1>
+  <main class="home-main">
+    
+    <section class="hero-container" aria-label="Welcome Banner">
+      <div class="hero-wrapper">
+        <img src="images/edmonton-hero.webp" alt="Edmonton Downtown Skyline" class="home-hero-img" width="1200" height="500" />
+        <div class="hero-cta-box">
+          <h1>Edmonton Chamber</h1>
+          <p>Empowering local businesses, driving economic growth, and building a stronger community together.</p>
+          <a href="join.html" class="btn-cta">Join the Chamber Today &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-grid-layout">
+      <div class="home-left-column">
+        <section class="events-card" aria-labelledby="events-heading">
+          <h2 id="events-heading">Current Events</h2>
+          <ul class="events-list">
+            <li>
+              <strong>Annual Business Awards Gala</strong>
+              <span>October 15, 2026 &bull; Edmonton Convention Centre</span>
+              <p>Celebrate excellence in our local marketplace. Registration is now open.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="weather-card" aria-labelledby="weather-heading">
+          <h2 id="weather-heading">Local Weather</h2>
+          <div id="weather-current" class="weather-current-box">
+            <p>Loading current conditions...</p>
+          </div>
+          <hr class="weather-divider" />
+          <div class="forecast-box">
+            <h3>3-Day Forecast</h3>
+            <div id="weather-forecast" class="forecast-grid">
+              <p>Loading forecast...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="spotlights-container" aria-labelledby="spotlights-heading">
+        <h2 id="spotlights-heading">Business Spotlights</h2>
+        <div id="spotlights-grid" class="spotlights-grid">
+          <p>Loading featured members...</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="directory-hero spaced" aria-label="Directory banner">
+      <h2>Member Directory</h2>
       <p>Connecting Edmonton's business community — one member at a time.</p>
     </section>
 
     <div class="directory-controls">
       <div class="view-toggle">
         <button id="grid-btn" class="view-btn active" aria-label="Grid view" title="Grid view">
-          
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
             <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
@@ -80,12 +122,13 @@
 
     <section id="members-container" class="members-grid" aria-live="polite" aria-label="Chamber members">
     </section>
+
   </main>
 
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="images/chamber-logo.jpg" alt="Edmonton Chamber of Commerce" width="40" height="40" >
+        <img src="images/chamber-logo.jpg" alt="Edmonton Chamber of Commerce" width="40" height="40" />
         <p><strong>Edmonton Chamber of Commerce</strong></p>
         <p>600 Chancery Hall, 3 Sir Winston Churchill Square<br />Edmonton, AB T5J 2C3</p>
         <p>📞 (780) 426-xxxx</p>
@@ -95,8 +138,8 @@
       <div class="footer-nav">
         <h2>Quick Links</h2>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html">Directory</a></li>
+          <li><a href="../index.html">Course Home</a></li>
+          <li><a href="index.html">Chamber & Directory</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="join.html">Join</a></li>
         </ul>
@@ -110,7 +153,5 @@
     </div>
   </footer>
 
-
-  
 </body>
 </html>

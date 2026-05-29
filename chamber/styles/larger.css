@@ -48,6 +48,16 @@
 
 @media (min-width: 960px) {
 
+  .home-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: start;
+    gap: 2rem;
+  }
+  .home-hero-img {
+    height: 450px;
+  }
+
   .header-inner {
     padding: .75rem 2rem;
   }
