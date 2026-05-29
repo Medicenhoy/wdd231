@@ -45,7 +45,7 @@ function renderCourses(filter) {
     const cardClass  = course.completed ? " completed" : (isCurrent ? " current" : "");
     const ariaLabel  = `${course.number}: ${course.name}${course.completed ? ", completed" : isCurrent ? ", in progress" : ""}`;
     const badge      = course.completed
-      ? '<span class="badge-done" aria-label="Completed">&#10003; Done</span>'
+      ? '<span class="badge-completed" aria-label="Completed">&#10003; Done</span>'
       : isCurrent
         ? '<span class="badge-current" aria-label="In progress">&#9654; Current</span>'
         : "";

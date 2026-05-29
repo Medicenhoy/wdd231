@@ -1,4 +1,4 @@
-/*I like how it looks on my phone, but I'm not convinced by the desktop version*/
+
 
 :root {
   
@@ -12,12 +12,14 @@
   --clr-gold: #f7c94f;
 
   --clr-text: #e8eaf2;
-  --clr-muted: #7a82a0;
+  --clr-muted: #9aa0bb;
+  --ease: .18s ease;
 
   
   --clr-done-bg: #112a1c;
   --clr-done-border: rgba(74, 222, 128, 0.3);
   --clr-done-text: #4ade80;
+  --clr-done-num: #4ade80;
 
   --ff-head: 'Syne', sans-serif;
   --ff-body: 'DM Sans', sans-serif;
@@ -137,12 +139,35 @@ header {
 .hero {
   width: 100%;
   padding: 5rem 2rem 4rem;
-  /* subtle radial glow */
   background: radial-gradient(ellipse 60% 50% at 15% 40%, rgba(79,142,247,.08) 0%, transparent 70%);
 }
 
+.hero-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
 .hero-content {
-  max-width: 660px; /* text column – not full width */
+  max-width: 560px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: var(--radius);
+  border: 1px solid var(--clr-border);
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
 }
 
 .eyebrow {
@@ -456,6 +481,9 @@ footer {
   #main-nav a { font-size: 1rem; padding: 0.5rem 0.75rem; }
 
  
+  .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-image { display: none; }
+
   .about-inner { grid-template-columns: 1fr; gap: 2rem; padding: 1.5rem; }
   .about-tagline { max-width: 100%; }
 
