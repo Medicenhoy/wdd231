@@ -417,7 +417,7 @@ footer {
   color: var(--gold-light);
 }
 
-.footer-nav h3 {
+.footer-nav h2 {
   font-family: var(--font-heading);
   font-size: .9rem;
   color: var(--gold-light);
