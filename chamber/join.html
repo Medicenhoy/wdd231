@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+  <title>Join the Chamber | Edmonton Chamber of Commerce</title>
+  <meta name="description" content="Apply for a membership at the Edmonton Chamber of Commerce. Select a membership level and grow your business network." >
+  <meta name="author" content="Eloy Francisco Martínez Cabello" >
+  <meta property="og:title" content="Join | Edmonton Chamber of Commerce">
+  <meta property="og:description" content="Apply to join the Edmonton Chamber of Commerce. Connecting local businesses and driving economic growth.">
+  <meta property="og:image" content="https://medicenhoy.github.io/wdd231/chamber/images/chamber-logo.jpg">
+  <meta property="og:url" content="https://medicenhoy.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/home.js" defer></script> 
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="images/chamber-logo.jpg" alt="Edmonton Chamber of Commerce logo" width="60" height="60" />
+        <div class="logo-text">
+          <span class="logo-title">Edmonton</span>
+          <span class="logo-sub">Chamber of Commerce</span>
+        </div>
+      </div>
+
+      <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Course Home</a></li>
+          <li><a href="index.html">Chamber & Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="join-container">
+    <h2>Membership Application</h2>
+    
+    <section class="form-section">
+        <form method="get" action="thankyou.html" class="join-form">
+            
+            <label>
+                First Name *
+                <input type="text" name="firstName" required autocomplete="given-name" title="Please enter your first name.">
+            </label>
+
+            <label>
+                Last Name *
+                <input type="text" name="lastName" required autocomplete="family-name" title="Please enter your last name.">
+            </label>
+
+            <label>
+                Organizational Title *
+                <input type="text" name="orgTitle" required autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Must be at least 7 characters long and contain only letters, spaces, or hyphens.">
+            </label>
+
+            <label>
+                Email Address *
+                <input type="email" name="email" required autocomplete="email" placeholder="example@business.com" title="Please enter a valid email address.">
+            </label>
+
+            <label>
+                Mobile Phone Number *
+                <input type="tel" name="phone" required autocomplete="tel" title="Please enter your mobile phone number.">
+            </label>
+
+            <label>
+                Business / Organization Name *
+                <input type="text" name="organization" required autocomplete="organization" title="Please enter your company or organization name.">
+            </label>
+
+            <fieldset class="membership-selection">
+                <legend>Membership Level *</legend>
+                <label class="radio-label">
+                    <input type="radio" name="membershipLevel" value="np" required>
+                    <span>NP Membership (Non-Profit - No Fee)</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="membershipLevel" value="bronze">
+                    <span>Bronze Membership</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="membershipLevel" value="silver">
+                    <span>Silver Membership</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="membershipLevel" value="gold">
+                    <span>Gold Membership</span>
+                </label>
+            </fieldset>
+
+            <label>
+                Business Description
+                <textarea name="description" title="Briefly describe your business or organization."></textarea>
+            </label>
+
+            <input type="hidden" id="form-timestamp" name="timestamp">
+
+            <button type="submit" class="submit-btn">Complete Application</button>
+        </form>
+    </section>
+
+    <section class="cards-section">
+        <div class="membership-card np-card">
+            <h3>NP Membership</h3>
+            <button class="open-modal-btn" data-modal="modal-np">Learn More</button>
+        </div>
+
+        <div class="membership-card bronze-card">
+            <h3>Bronze Membership</h3>
+            <button class="open-modal-btn" data-modal="modal-bronze">Learn More</button>
+        </div>
+
+        <div class="membership-card silver-card">
+            <h3>Silver Membership</h3>
+            <button class="open-modal-btn" data-modal="modal-silver">Learn More</button>
+        </div>
+
+        <div class="membership-card gold-card">
+            <h3>Gold Membership</h3>
+            <button class="open-modal-btn" data-modal="modal-gold">Learn More</button>
+        </div>
+    </section>
+
+    <dialog id="modal-np" class="benefit-modal">
+        <div class="modal-inner">
+            <button class="close-modal-btn" aria-label="Close modal">&times;</button>
+            <h4>Non-Profit Membership Benefits</h4>
+            <p>Designed strictly for non-profit organizations and NGOs.</p>
+            <ul>
+                <li>Cost: Free / No Fee</li>
+                <li>Basic directory listing.</li>
+                <li>Access to general chamber training workshops.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-bronze" class="benefit-modal">
+        <div class="modal-inner">
+            <button class="close-modal-btn" aria-label="Close modal">&times;</button>
+            <h4>Bronze Membership Benefits</h4>
+            <p>Perfect for small businesses and startups looking to expand networking.</p>
+            <ul>
+                <li>Cost: $150 / year</li>
+                <li>Standard directory listing.</li>
+                <li>10% discount on chamber events tickets.</li>
+                <li>Access to monthly networking mixers.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-silver" class="benefit-modal">
+        <div class="modal-inner">
+            <button class="close-modal-btn" aria-label="Close modal">&times;</button>
+            <h4>Silver Membership Benefits</h4>
+            <p>Our mid-tier level with advanced branding capabilities.</p>
+            <ul>
+                <li>Cost: $350 / year</li>
+                <li>Enhanced listing with company logo.</li>
+                <li>25% discount on events and advertising slots.</li>
+                <li>Access to exclusive training seminars.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog id="modal-gold" class="benefit-modal">
+        <div class="modal-inner">
+            <button class="close-modal-btn" aria-label="Close modal">&times;</button>
+            <h4>Gold Membership Benefits</h4>
+            <p>Maximum exposure, elite status, and top-tier promotional placements.</p>
+            <ul>
+                <li>Cost: $600 / year</li>
+                <li>Premium listing at the top of the directory searches.</li>
+                <li>Free admission to all chamber events (up to 3 members).</li>
+                <li><strong>Home Page Spotlight placement eligibility!</strong></li>
+            </ul>
+        </div>
+    </dialog>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/chamber-logo.jpg" alt="Edmonton Chamber of Commerce" width="40" height="40" />
+        <p><strong>Edmonton Chamber of Commerce</strong></p>
+        <p>600 Chancery Hall, 3 Sir Winston Churchill Square<br />Edmonton, AB T5J 2C3</p>
+        <p>📞 (780) 426-xxxx</p>
+        <p><a href="mailto:info@edmontonchamber.com">info@edmontonchamber.com</a></p>
+      </div>
+
+      <div class="footer-nav">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="../index.html">Course Home</a></li>
+          <li><a href="index.html">Chamber & Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-meta">
+        <p>Eloy Francisco Martínez Cabello &nbsp;|&nbsp; WDD 231</p>
+        <p id="footer-year"></p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

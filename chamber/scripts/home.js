@@ -13,6 +13,7 @@ function capitalizeDescription(desc) {
 }
 
 async function fetchCurrentWeather() {
+  if (!weatherCurrentContainer) return;
   try {
     const response = await fetch(currentWeatherUrl);
     if (!response.ok) throw new Error(`Weather error: ${response.status}`);
@@ -26,6 +27,7 @@ async function fetchCurrentWeather() {
 }
 
 function displayCurrentWeather(data) {
+  if (!weatherCurrentContainer) return;
   const temp = Math.round(data.main.temp);
   const desc = capitalizeDescription(data.weather[0].description);
   const iconCode = data.weather[0].icon;
@@ -43,6 +45,7 @@ function displayCurrentWeather(data) {
 }
 
 async function fetchWeatherForecast() {
+  if (!weatherForecastContainer) return;
   try {
     const response = await fetch(forecastUrl);
     if (!response.ok) throw new Error(`Forecast error: ${response.status}`);
@@ -56,6 +59,7 @@ async function fetchWeatherForecast() {
 }
 
 function displayForecast(data) {
+  if (!weatherForecastContainer) return;
   weatherForecastContainer.innerHTML = '';
   
   const dailyForecasts = data.list.filter(item => item.dt_txt.includes("12:00:00"));
@@ -64,9 +68,7 @@ function displayForecast(data) {
 
   nextThreeDays.forEach(item => {
     const dateObj = new Date(item.dt * 1000);
-    
     const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'long' });
-    
     const temp = Math.round(item.main.temp);
     const desc = capitalizeDescription(item.weather[0].description);
     const iconCode = item.weather[0].icon;
@@ -85,8 +87,15 @@ function displayForecast(data) {
   });
 }
 
-document.getElementById('footer-year').textContent = `© ${new Date().getFullYear()} Edmonton Chamber of Commerce`;
-document.getElementById('last-modified').textContent = document.lastModified;
+const footerYear = document.getElementById('footer-year');
+if (footerYear) {
+  footerYear.textContent = `© ${new Date().getFullYear()} Edmonton Chamber of Commerce`;
+}
+
+const lastMod = document.getElementById('last-modified');
+if (lastMod) {
+  lastMod.textContent = document.lastModified;
+}
 
 fetchCurrentWeather();
 fetchWeatherForecast();
@@ -100,10 +109,9 @@ function membershipLabel(level) {
 }
 
 function displaySpotlights(members) {
+  if (!spotlightsGrid) return;
   const eligibleMembers = members.filter(m => m.membershipLevel === 3 || m.membershipLevel === 2);
-
   const shuffled = eligibleMembers.sort(() => 0.5 - Math.random());
-
   const selectedMembers = shuffled.slice(0, 3);
 
   spotlightsGrid.innerHTML = '';
@@ -129,6 +137,7 @@ function displaySpotlights(members) {
 }
 
 async function loadSpotlights() {
+  if (!spotlightsGrid) return;
   try {
     const response = await fetch('data/members.json');
     if (!response.ok) throw new Error(`Could not load members JSON: ${response.status}`);
@@ -140,6 +149,5 @@ async function loadSpotlights() {
     spotlightsGrid.innerHTML = `<p class="error-msg">Unable to load featured spotlights at this time.</p>`;
   }
 }
-
 
 loadSpotlights();

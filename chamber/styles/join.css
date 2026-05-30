@@ -1,0 +1,289 @@
+
+:root {
+    --np-badge: var(--stone);
+    --bronze-badge: #cd7f32; 
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.join-container {
+    padding: var(--gap);
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.join-container h2 {
+    text-align: center;
+    color: var(--river);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+.join-form {
+    background-color: #fff;
+    border: 1px solid #dde3ea;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(27,58,92,0.06);
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: 1.25rem;
+    color: var(--river);
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    margin-top: .4rem;
+    border: 1px solid #c5cdd8;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background-color: var(--snow);
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(200, 130, 42, 0.2);
+    background-color: #fff;
+}
+
+.join-form input:required {
+    border-left: 4px solid var(--river);
+}
+
+.join-form input:required:valid {
+    border-left-color: var(--valley);
+}
+
+.membership-selection {
+    border: 1px solid #c5cdd8;
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--snow);
+}
+
+.membership-selection legend {
+    font-weight: 600;
+    color: var(--river);
+    padding: 0 .5rem;
+}
+
+.radio-label {
+    display: flex !important;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem !important;
+    font-weight: normal !important;
+    cursor: pointer;
+    color: var(--ink);
+}
+
+.radio-label input[type="radio"] {
+    accent-color: var(--gold);
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.join-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background: var(--gold);
+    color: var(--ink);
+    border: none;
+    padding: 1rem;
+    border-radius: var(--radius);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+}
+
+.submit-btn:hover {
+    background: var(--valley);
+    color: #fff;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.membership-card {
+    background-color: #fff;
+    border: 1px solid #dde3ea;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(27,58,92,0.06);
+    border-top: 6px solid;
+    
+    opacity: 0;
+    animation: cardEntrance 0.6s ease-out forwards;
+}
+
+.np-card     { border-top-color: var(--np-badge); animation-delay: 0.1s; }
+.bronze-card { border-top-color: var(--bronze-badge); animation-delay: 0.2s; }
+.silver-card { border-top-color: var(--silver-badge); animation-delay: 0.3s; }
+.gold-card   { border-top-color: var(--gold-badge); animation-delay: 0.4s; }
+
+.membership-card h3 {
+    color: var(--river);
+    font-size: 1.25rem;
+}
+
+.open-modal-btn {
+    background-color: var(--snow);
+    border: 1px solid var(--sky);
+    color: var(--sky);
+    padding: .5rem 1rem;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all .2s;
+}
+
+.open-modal-btn:hover {
+    background-color: var(--sky);
+    color: #fff;
+}
+
+.benefit-modal {
+    border: none;
+    border-radius: var(--radius);
+    padding: 0;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.benefit-modal::backdrop {
+    background-color: rgba(26, 29, 35, 0.7); 
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.modal-inner {
+    padding: 2rem;
+    position: relative;
+    background-color: #fff;
+    color: var(--ink);
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--stone);
+    transition: color .2s;
+}
+
+.close-modal-btn:hover {
+    color: var(--gold);
+}
+
+.modal-inner h4 {
+    color: var(--river);
+    border-bottom: 2px solid var(--gold-light);
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-inner ul {
+    padding-left: 1.25rem;
+}
+
+.modal-inner li {
+    margin-bottom: .5rem;
+    color: var(--stone);
+}
+
+@media (min-width: 960px) {
+    .join-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .join-container h2 {
+        grid-column: 1 / -1;
+    }
+
+    .form-section {
+        margin-bottom: 0;
+    }
+
+    .cards-section {
+        position: sticky;
+        top: 90px; 
+    }
+}
+/* THANK YOU PAGE STYLES*/
+.thankyou-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thankyou-msg {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.thankyou-name {
+    color: var(--river);
+    font-family: var(--font-heading);
+}
+
+.summary-box {
+    background-color: var(--snow);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border-left: 4px solid var(--gold);
+}
+
+.summary-title {
+    color: var(--river);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #c5cdd8;
+    padding-bottom: 0.5rem;
+}
