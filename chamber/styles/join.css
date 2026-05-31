@@ -21,7 +21,7 @@
     margin: 2rem auto;
 }
 
-.join-container h2 {
+.join-container h1 {
     text-align: center;
     color: var(--river);
     font-size: 2rem;
@@ -244,7 +244,7 @@
         align-items: start;
     }
 
-    .join-container h2 {
+    .join-container h1 {
         grid-column: 1 / -1;
     }
 
