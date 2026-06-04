@@ -1,0 +1,91 @@
+/* Importar variables para facilitar el esquema de colores */
+:root {
+    --bg-dark: #1a1a1a;
+    --text-light: #f4f4f9;
+    --neon-cyan: #00f3ff;
+    --neon-magenta: #ff00ea;
+    
+    --font-heading: 'Press Start 2P', system-ui, sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* Reseteo básico y aplicación del Color Schema y Typograhy al documento */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    border-bottom: 4px solid var(--neon-magenta);
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+}
+
+/* Aplicando la tipografía retro a los títulos */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--neon-cyan);
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px var(--neon-magenta);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--neon-magenta);
+}
+
+a {
+    color: var(--neon-cyan);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--neon-magenta);
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--neon-cyan);
+    display: block;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    border-top: 2px solid var(--neon-cyan);
+    background-color: #111;
+}
