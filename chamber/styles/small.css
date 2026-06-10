@@ -565,3 +565,60 @@ footer {
 .spotlight-card h3 { color: var(--river); font-size: 1.1rem; margin: 0.5rem 0; }
 .spotlight-body p { margin: 0.2rem 0; font-size: 0.85rem; color: var(--stone); }
 .spotlight-web { display: inline-block; margin-top: 0.8rem; font-size: 0.85rem; font-weight: 600; }
+
+/* --- DISCOVER PAGE: SMALL VIEWS --- */
+.discover-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.visit-card, .demographics-card {
+  background-color: #f4f6f8;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+
+#places-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+
+.place-card {
+  display: grid;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+  gap: 0.5rem;
+  overflow: hidden; /* Evitar que la imagen se salga de los bordes redondeados */
+  
+
+  grid-template-areas: 
+    "title"
+    "photo"
+    "address"
+    "desc"
+    "button";
+}
+
+.place-title { grid-area: title; margin: 0; font-size: 1.5rem; }
+.place-fig { grid-area: photo; margin: 0; width: 100%; }
+.place-fig img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.place-address { grid-area: address; font-style: italic; font-size: 0.9rem; color: #555; }
+.place-desc { grid-area: desc; margin: 0; }
+.place-btn { 
+  grid-area: button; 
+  padding: 0.5rem; 
+  background-color: #1b3a5c; 
+  color: white; 
+  border: none; 
+  cursor: pointer;
+  border-radius: 4px;
+}

@@ -115,3 +115,38 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+
+/* --- DISCOVER PAGE: LARGER VIEWS --- */
+
+
+.discover-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr; 
+  align-items: start;
+}
+
+
+#places-container {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.place-card {
+  grid-template-columns: 200px 1fr; 
+  grid-template-areas: 
+    "photo title"
+    "photo address"
+    "photo desc"
+    "photo button";
+  align-items: center; 
+}
+
+
+.place-card img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.place-card:hover img {
+  transform: scale(1.05); /* Zoom sutil */
+  filter: brightness(1.1); /* Brillo sutil */
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discover Edmonton | Chamber of Commerce</title>
+  <meta name="description" content="Discover the best attractions, demographics, and places of interest in Edmonton.">
+  <meta name="author" content="Eloy Martinez Cabello">
+
+  <meta property="og:title" content="Discover Edmonton | Chamber of Commerce">
+  <meta property="og:description" content="Explore the highlights of Edmonton, Alberta.">
+  <meta property="og:image" content="https://medicenhoy.github.io/wdd231/chamber/images/chamber-logo.jpg">
+  <meta property="og:url" content="https://medicenhoy.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script type="module" src="scripts/discover.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="images/chamber-logo.jpg" alt="Edmonton Chamber of Commerce logo" width="60" height="60">
+        <div class="logo-text">
+          <span class="logo-title">Edmonton</span>
+          <span class="logo-sub">Chamber of Commerce</span>
+        </div>
+      </div>
+
+      <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Course Home</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="discover-main">
+    <div class="discover-layout">
+      <aside class="sidebar">
+        <div class="visit-card">
+          <h2>Visitor Status</h2>
+          <p id="visit-message">Loading status...</p>
+        </div>
+        <div class="demographics-card">
+          <h2>Edmonton Demographics</h2>
+          <ul>
+            <li><strong>Population:</strong> ~1.1 Million</li>
+            <li><strong>Province:</strong> Alberta (AB)</li>
+            <li><strong>Known as:</strong> Canada's Festival City</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="gallery">
+        <h1>Discover Edmonton</h1>
+        <div id="places-container">
+          </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    </footer>
+
+</body>
+</html>
