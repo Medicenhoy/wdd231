@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Event - Retro Gaming Hub</title>
+    <meta name="description" content="Register for the upcoming retro arcade tournaments.">
+    <meta name="author" content="Eloy">
+    <meta property="og:title" content="Tournament Registration">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png">
+    <meta property="og:url" content="https://medicenhoy.io/wdd231/project/join.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retro Hub</h1>
+        </div>
+        <button id="menu-btn" aria-label="Toggle navigation">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="join.html" class="active">Join Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tournament Registration</h2>
+        
+        <form method="get" action="thankyou.html" class="retro-form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="player1@retro.com" required>
+
+            <label for="gamertag">Gamertag</label>
+            <input type="text" id="gamertag" name="gamertag" required>
+
+            <label for="console">Primary Console Category</label>
+            <select id="console" name="console" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Nintendo 16-bit">Nintendo 16-bit</option>
+                <option value="Sega 16-bit">Sega 16-bit</option>
+                <option value="Sony 32-bit">Sony 32-bit</option>
+                <option value="Arcade Cabinet">Arcade Cabinet</option>
+            </select>
+
+            <button type="submit" class="btn-primary">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> | Retro Gaming Hub | Viamão, Brazil</p>
+            <p id="lastModified"></p>
+            <div class="footer-links">
+                <a href="attributions.html">Resource Attributions</a> | 
+                <a href="#" target="_blank">Video Demonstration</a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/medicenhoy">🐦 Twitter</a>
+                <a href="https://discord.gg/fg3uv8prC">👾 Discord</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

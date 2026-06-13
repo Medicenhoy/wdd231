@@ -285,3 +285,59 @@ dialog::backdrop {
     margin: 1.5rem 0;
     line-height: 1.8;
 }
+
+.retro-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #222;
+    padding: 2.5rem;
+    border: 2px solid var(--neon-cyan);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+}
+
+.retro-form label {
+    color: var(--neon-cyan);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    margin-bottom: -0.8rem;
+}
+
+.retro-form input,
+.retro-form select {
+    padding: 1rem;
+    background-color: #111;
+    border: 1px solid #555;
+    color: var(--text-light);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.retro-form input:focus,
+.retro-form select:focus {
+    outline: none;
+    border-color: var(--neon-magenta);
+    box-shadow: 0 0 8px var(--neon-magenta);
+}
+
+.results-box {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #222;
+    padding: 2rem;
+    border: 2px solid var(--neon-magenta);
+    border-radius: 8px;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+
+.results-box p {
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
