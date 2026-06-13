@@ -1,4 +1,4 @@
-/* Importar variables para facilitar el esquema de colores */
+
 :root {
     --bg-dark: #1a1a1a;
     --text-light: #f4f4f9;
@@ -9,7 +9,7 @@
     --font-body: 'Roboto', sans-serif;
 }
 
-/* Reseteo básico y aplicación del Color Schema y Typograhy al documento */
+
 body {
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -38,7 +38,7 @@ section {
     border-bottom: 1px solid #333;
 }
 
-/* Aplicando la tipografía retro a los títulos */
+
 h1, h2, h3 {
     font-family: var(--font-heading);
     color: var(--neon-cyan);
