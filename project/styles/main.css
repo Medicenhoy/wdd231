@@ -57,7 +57,7 @@ header h1 {
 
 nav ul {
     list-style: none;
-    display: none; /* Oculto por defecto en móvil */
+    display: none;
     flex-direction: column;
     background-color: #111;
     position: absolute;
@@ -141,7 +141,6 @@ footer {
     }
 }
 
-
 .hero {
     
     background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
@@ -159,10 +158,10 @@ footer {
     line-height: 1.4;
 }
 
-.btn-primary {
+.retro-btn {
     display: inline-block;
     background-color: var(--neon-magenta);
-    color: var(--text-light);
+    color: #111; 
     padding: 0.8rem 1.5rem;
     margin-top: 1rem;
     border-radius: 4px;
@@ -171,13 +170,54 @@ footer {
     text-transform: uppercase;
     box-shadow: 0 0 10px var(--neon-magenta);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.btn-primary:hover {
+.retro-btn:hover {
     background-color: var(--bg-dark);
     color: var(--neon-cyan);
     box-shadow: 0 0 20px var(--neon-cyan);
-    text-decoration: none;
+}
+
+.retro-card {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.retro-card h2, .retro-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--neon-cyan);
+    padding-bottom: 0.5rem;
+}
+
+.tournament-timer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    border: 1px solid var(--neon-cyan);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.site-title {
+    font-family: var(--font-heading);
+    color: var(--neon-cyan);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px var(--neon-magenta);
+}
+
+.attributions-card {
+    margin-top: 2rem;
+}
+
+.attributions-list {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .home-grid {
