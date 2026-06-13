@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Retro Gaming Hub</title>
+    <meta name="description" content="Browse our classic console database.">
+    <meta name="author" content="Eloy Francisco Martinez Cabello">
+    <meta property="og:title" content="Console Catalog">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png">
+    <meta property="og:url" content="https://medicenhoy.io/wdd231/project/catalog.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/catalog.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retro Hub</h1>
+        </div>
+        <button id="menu-btn" aria-label="Toggle navigation">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="join.html">Join Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Console Database</h2>
+        <div class="filter-controls">
+            <button class="filter-btn">All</button>
+            <button class="filter-btn">Nintendo</button>
+            <button class="filter-btn">Sega</button>
+            <button class="filter-btn">Sony</button>
+        </div>
+        
+        <div id="catalog-grid" class="home-grid"></div>
+
+        <dialog id="details-modal">
+            <h3 id="modal-title"></h3>
+            <div id="modal-info"></div>
+            <button id="close-modal" class="btn-primary">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> | Retro Gaming Hub | Viamão, Brazil</p>
+            <p id="lastModified"></p>
+            <div class="footer-links">
+                <a href="attributions.html">Resource Attributions</a> | 
+                <a href="#" target="_blank">Video Demonstration</a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/medicenhoy">🐦 Twitter</a>
+                <a href="https://discord.gg/fg3uv8prC">👾 Discord</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

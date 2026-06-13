@@ -1,0 +1,17 @@
+[
+  { "name": "NES", "company": "Nintendo", "year": 1985, "bits": "8-bit" },
+  { "name": "Super Nintendo", "company": "Nintendo", "year": 1990, "bits": "16-bit" },
+  { "name": "Nintendo 64", "company": "Nintendo", "year": 1996, "bits": "64-bit" },
+  { "name": "GameCube", "company": "Nintendo", "year": 2001, "bits": "128-bit" },
+  { "name": "Master System", "company": "Sega", "year": 1985, "bits": "8-bit" },
+  { "name": "Sega Genesis", "company": "Sega", "year": 1988, "bits": "16-bit" },
+  { "name": "Sega Saturn", "company": "Sega", "year": 1994, "bits": "32-bit" },
+  { "name": "Dreamcast", "company": "Sega", "year": 1998, "bits": "128-bit" },
+  { "name": "PlayStation", "company": "Sony", "year": 1994, "bits": "32-bit" },
+  { "name": "PlayStation 2", "company": "Sony", "year": 2000, "bits": "128-bit" },
+  { "name": "Atari 2600", "company": "Atari", "year": 1977, "bits": "8-bit" },
+  { "name": "Atari 7800", "company": "Atari", "year": 1986, "bits": "8-bit" },
+  { "name": "Neo Geo AES", "company": "SNK", "year": 1990, "bits": "16-bit" },
+  { "name": "TurboGrafx-16", "company": "NEC", "year": 1989, "bits": "16-bit" },
+  { "name": "Xbox", "company": "Microsoft", "year": 2001, "bits": "128-bit" }
+]

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Retro Gaming Hub</title>
+    <meta name="description" content="Discover classic video game consoles, local arcade tournaments, and community events at Retro Gaming Hub.">
+    <meta name="author" content="Eloy Francisco Martinez Cabello">
+    
+    <meta property="og:title" content="Retro Gaming Hub & Event Tracker">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png"> <meta property="og:url" content="https://tu-usuario.github.io/wdd231/project/index.html">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Retro Hub</h1>
+        </div>
+        <button id="menu-btn" aria-label="Toggle navigation">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="join.html">Join Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Retro Archive Hub!</h2>
+                <p>Discover and celebrate classic gaming. Join our local tournaments and track your high scores.</p>
+                <a href="join.html" class="btn-primary">Join Now</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            
+            <section class="card featured-console">
+                <h3>Featured Console</h3>
+                <img src="https://images.unsplash.com/photo-1531525645387-7f14be1bfc75?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Super Nintendo Entertainment System" width="600" height="400" loading="lazy">
+                <div class="console-info">
+                    <h4>Super Nintendo (SNES)</h4>
+                    <p><strong>Release:</strong> 1990</p>
+                    <p><strong>Generation:</strong> 16-bit</p>
+                </div>
+            </section>
+
+            <section class="card notice-board">
+                <h3>Community Notice Board</h3>
+                
+                <div id="greeting-container" class="greeting">
+                    </div>
+
+                <div class="tournament-timer">
+                    <h4>Upcoming Tournament: Pac-Man Challenge</h4>
+                    <p id="countdown">Calculating...</p>
+                </div>
+                
+                <div class="latest-news">
+                    <h4>Latest News</h4>
+                    <p>The retro database has just been updated with 15 classic consoles. Check out the <a href="catalog.html">Catalog</a>!</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> | Retro Gaming Hub | Viamão, Brazil</p>
+            <p id="lastModified"></p>
+            <div class="footer-links">
+                <a href="attributions.html">Resource Attributions</a> | 
+                <a href="#" target="_blank">Video Demonstration</a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/medicenhoy">🐦 Twitter</a>
+                <a href="https://discord.gg/fg3uv8prC">👾 Discord</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
