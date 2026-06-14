@@ -161,10 +161,12 @@ footer {
 .retro-btn {
     display: inline-block;
     background-color: var(--neon-magenta);
-    color: #111; 
+    color: #111;
     padding: 0.8rem 1.5rem;
     margin-top: 1rem;
     border-radius: 4px;
+    border: none;
+    cursor: pointer;
     font-family: var(--font-heading);
     font-size: 0.8rem;
     text-transform: uppercase;

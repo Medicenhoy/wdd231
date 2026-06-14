@@ -16,13 +16,13 @@ function displayConsoles(data) {
     grid.innerHTML = '';
     data.forEach(item => {
         const card = document.createElement('div');
-        card.className = 'card';
+        card.className = 'retro-card';
         card.innerHTML = `
             <h3>${item.name}</h3>
             <p><strong>Company:</strong> ${item.company}</p>
             <p><strong>Year:</strong> ${item.year}</p>
             <p><strong>Bits:</strong> ${item.bits}</p>
-            <button class="btn-primary view-btn" data-id="${item.name}">Details</button>
+            <button class="retro-btn view-btn" data-id="${item.name}">Details</button>
         `;
         grid.appendChild(card);
     });
